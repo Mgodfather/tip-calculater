@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+#main-container {
+    display: flex;
+    /* max-width: 75%; */
+    margin: 50px 50px 0 5px;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.both-container {
+    width: 500px;
+    padding: 10px 40px;
+}
+
+.input-container p {
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    color: blueviolet;
+}
+
+.inputfield {
+    display: flex;
+    align-items: center;
+    font-size: 2.2rem;
+    border: 2px solid rgb(65, 12, 65);
+    border-radius: 6px;
+    overflow: hidden;
+    color: blueviolet;
+}
+
+.inputfield span {
+    padding-left: 5px;
+}
+
+.input-container input {
+    font-size: 2.2rem;
+    width: 100%;
+    color: blueviolet;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+
+input.two-inputs {
+    border-radius: 3px;
+    background-color: rgba(143, 143, 143, 0.677);
+}
+
+.input-container .tip-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    gap: 20px;
+}
+
+.tip-boxes .tips {
+    width: 100px;
+    padding: 10px 0;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 8px;
+    font-size: 2.2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.people-container {
+    margin-bottom: 16px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 2.2rem;
+    margin: 8px 0;
+    border-radius: 7px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 600;
+}
+
+.output-container {
+    border-radius: 20px;
+    background-color: rgba(21, 14, 121, 0.815);
+    min-height: 480px;
+    margin-top: 50px;
+}
+
+.output-container h5 {
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    color: rgb(227, 229, 233);
+}
+
+.output-container h4 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(226, 6, 255);
+}
+
+.all-output-amount {
+    display: flex;
+    width: 90%;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button[type="reset"] {
+    margin-top: 50px;
+    background-color: white;
+    color: blueviolet;
+}
+
+
+
+/* active classes */
+
+.tip-boxes .tips.selected {
+    outline: 4px solid orange;
+}
+
+.tip-boxes .tips.disable {
+    cursor: not-allowed;
+}
+
+button[type="submit"]:disabled,
+button[type="reset"]:disabled {
+    background-color: rgb(215, 215, 215);
+    color: rgb(171, 171, 171);
+    cursor: not-allowed;
+}
+
+input:disabled {
+    cursor: not-allowed;
+}
+
+.tip-boxes.disable .tips {
+    cursor: not-allowed;
+    color: rgb(176, 176, 176);
+    background-color: rgba(187, 187, 187, 0.483);
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 895px) {
+    #main-container {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        gap: 0;
+    }
+
+}
+
+@media only screen and (max-width: 556px) {
+    #main-container {
+        margin-right: 20px;
+        margin-left: 20px;
+        gap: 0;
+    }
+
+    .both-container {
+        /* font-size: 2rem; */
+        color: blueviolet;
+        max-width: 100%;
+    }
+
+
+}

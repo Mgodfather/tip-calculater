@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main id="main-container">
+        <section class="input-container both-container">
+            <p>Bill</p>
+            <div class="inputfield">
+                <span>₹</span>
+                <input type="number" name="" id="bill-amount" required>
+            </div>
+            <div class="tip-container">
+
+            </div>
+            <div class="custom-tip-box">
+                <p>select Tip</p>
+                <div class="tip-boxes disable">
+                    <button class="tips" id="one">5%</button>
+                    <button class="tips" id="two">10%</button>
+                    <button class="tips" id="three">15%</button>
+                    <button class="tips" id="four">25%</button>
+                    <button class="tips" id="five">50%</button>
+                    <button class="tips" id="six">75%</button>
+                </div>
+                <input disabled class="two-inputs" type="number" placeholder="custom tip" id="tip-amount" required>
+            </div>
+            <div class="people-container">
+                <p>Number Of People</p>
+                <input disabled class="two-inputs" type="number" id="no-of-people" placeholder="Number Of People">
+            </div>
+            <button type="submit">Generate Bill</button>
+        </section>
+
+
+        <section class="output-container both-container">
+            <div class="tip-amount all-output-amount">
+                <h5>tip amount</h5>
+                <h4 class="tip-amount"></h4>
+            </div>
+
+            <div class="total-amount all-output-amount">
+                <h5>total amount</h5>
+                <h4 class="total-bill"></h4>
+            </div>
+
+            <div class="splitted-amount all-output-amount">
+                <h5>each person bills</h5>
+                <h4 class="divided-bill"></h4>
+            </div>
+            <button type="reset">Reset</button>
+        </section>
+    </main>
+
+</body>
+
+</html>
